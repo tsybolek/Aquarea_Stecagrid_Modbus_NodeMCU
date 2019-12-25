@@ -32,4 +32,4 @@ RS-485 bus as a normal serial port (38400 8N1). Until now, no problems with the 
 
 Future plans:
 
-Switch from modbus TCP to CAN bus (i.e. NodeMCU to communicate directly to my home automation controller). This will make the setup independent of Wifi or local IP network thus increasing its autonomy and failure safety. System monitoring should still remain possible over Wifi, of course.
+Switch from modbus TCP to CAN bus (i.e. NodeMCU to communicate to my home automation controller over a CAN adapter module). This will make the setup independent of Wifi or local IP network thus increasing its autonomy and failure safety. System monitoring should still remain possible over Wifi, of course.
