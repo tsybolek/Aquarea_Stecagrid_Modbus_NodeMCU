@@ -10,8 +10,7 @@ c) averages the obtained values over the specified interval (e.g. 10 sec; durati
 
 d) exposes these average values over modbus TCP (as slave) into the local network.
 
-These data can be used to optimize the utilization of the self-produced electric energy (by over-heating the buffer tank during excessive 
-current production by solar panels).
+These data can be used to optimize the utilization of the self-produced electric energy (for example, by over-heating the buffer tank during the excessive current production by solar panels).
 
 Modbus implementation is based on a tutorial from http://trialcommand.com
 
@@ -30,3 +29,7 @@ provided only sparse documentation for the "services" and not the protocol itsel
 difficult to find out the exact HEX sequence for the request. The decryption of the answer was then possible by means of the provided ducumentation.
 The RS-485 adapter module I'm using is this one: https://www.makershop.de/module/kommunikation-module/ttl-rs485-adapter/  It allows using the
 RS-485 bus as a normal serial port (38400 8N1). Until now, no problems with the hardware either.
+
+Future plans:
+
+Switch from modbus TCP to CAN bus (i.e. NodeMCU to communicate directly to my home automation controller). This will make the setup independent of Wifi or local IP network thus increasing its autonomy and failure safety. System monitoring should still remain possible over Wifi, of course.
